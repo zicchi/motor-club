@@ -17,7 +17,8 @@ class PurposeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'type' => 0,
+            'value' => 'Visi'
         ];
     }
 }

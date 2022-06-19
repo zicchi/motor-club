@@ -13,11 +13,15 @@
         <h4 class="fw-bold">Visi</h4>
         <div class="col-md-6">
             <hr>
+            {{$vision->value}}
         </div>
 
         <h4 class="fw-bold mt-5">Misi</h4>
         <div class="col-md-6">
             <hr>
+            @foreach($missions as $mission)
+                 {{$loop->index + 1}}. {{$mission->value}}<br>
+            @endforeach
         </div>
 
     </div>

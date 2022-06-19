@@ -17,7 +17,8 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'image' => 'assets/images/brake.png',
+            'name' => 'Aksesoris',
         ];
     }
 }

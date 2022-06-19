@@ -17,7 +17,8 @@ class GalleryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'image' => 'assets/images/club.jpeg',
+            'caption' => 'Klub Motor'
         ];
     }
 }

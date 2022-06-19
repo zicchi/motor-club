@@ -10,22 +10,16 @@
         </ol>
 
         <div class="row">
-            <div class="col-md-3 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="{{asset('assets/images/logo.png')}}" style="height: 200px" alt="" class="card-img-top p-5">
-                        <span class="text-center">Aksesoris Motor</span>
+            @foreach($galleries as $gallery)
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{asset($gallery->image)}}" style="height: 200px" alt="" class="card-img-top">
+                            <span class="text-center">{{$gallery->caption}}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="{{asset('assets/images/brake.png')}}" alt="" style="height: 200px"  class="card-img-top p-5">
-                        <span class="text-center">Aksesoris Motor</span>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
 
     </div>

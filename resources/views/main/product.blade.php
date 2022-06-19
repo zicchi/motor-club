@@ -10,14 +10,16 @@
         </ol>
 
         <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="{{asset('assets/images/brake.png')}}" alt="" class="card-img-top p-5">
-                        <span class="text-center">Aksesoris Motor</span>
+            @foreach($products as $product)
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{asset($product->image)}}" alt="" class="card-img-top p-5">
+                            <span class="text-center">{{$product->name}}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
 
     </div>
