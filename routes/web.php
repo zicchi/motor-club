@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::group(['prefix' => 'login','as' => 'login::'],function (){
+    Route::get('/',[LoginController::class,'index'])->name('index');
+    Route::post('/',[LoginController::class,'login'])->name('login');
+    Route::get('/',[LoginController::class,'index'])->name('index');
+    Route::post('/',[LoginController::class,'login'])->name('login');
+});
 
 Route::get('/',[HomeController::class,'home'])->name('home');
 Route::get('/profile',[HomeController::class,'profile'])->name('profile');

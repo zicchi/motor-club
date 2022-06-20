@@ -18,6 +18,15 @@
                             <i class="fa fa-user"></i> <span class="ms-1 d-none d-sm-inline">Klien Kami</span>
                         </a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link align-middle px-0 text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-lock"></i><span class="ms-1 d-none d-sm-inline">Login</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Sign In</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
